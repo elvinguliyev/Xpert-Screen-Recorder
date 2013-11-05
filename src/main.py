@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import singleton, logging
 singleton.logger.setLevel(logging.CRITICAL)
-me = singleton.SingleInstance()
+singleton.SingleInstance()
 import pygtk
 pygtk.require('2.0')
 import gtk, os, sys, subprocess, operator, signal, webbrowser
@@ -336,7 +336,7 @@ class XpertScreenRecorder(object):
         about.set_name(self.app_title)
         about.set_version('v1.0')
         about.set_comments(T('Xpert Screen Recorder is a multi-platform screencast recorder.'))
-        about.set_authors([u'Osman Tunçelli <tuncelliosman@gmail.com>'])
+        about.set_authors([u'Osman Tunçelli <tuncelliosman-at-gmail.com>'])
         about.run()
         about.destroy()
     
